@@ -1,6 +1,7 @@
 # Build artifacts
 /target
 /dist
+/packaging/arch/build/
 
 # Whisper models (large binary files)
 /models/*.bin

@@ -10,16 +10,8 @@ ExecStart=/usr/bin/voxtype daemon
 Restart=on-failure
 RestartSec=5
 
-# Security hardening
-NoNewPrivileges=true
-ProtectSystem=strict
-ProtectHome=read-only
-PrivateTmp=true
-ReadWritePaths=%h/.local/share/voxtype
-ReadWritePaths=%h/.config/voxtype
-
-# Allow access to input devices (evdev)
-SupplementaryGroups=input
+# Note: User must be in 'input' group for evdev access
+# Run: sudo usermod -aG input $USER
 
 [Install]
 WantedBy=default.target

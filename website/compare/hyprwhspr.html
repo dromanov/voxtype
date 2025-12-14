@@ -74,11 +74,37 @@
                 <td>Yes</td>
             </tr>
             <tr>
+                <td>Systemd Service</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Audio Feedback</td>
+                <td>Yes (customizable themes)</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Desktop Notifications</td>
+                <td>Yes (notify-send)</td>
+                <td><strong>No (audio only)</strong></td>
+            </tr>
+            <tr>
                 <td>Cloud Fallback</td>
                 <td>No (offline only)</td>
                 <td>Yes (OpenAI, Groq APIs)</td>
             </tr>
         </table>
+
+        <h2>What They Share</h2>
+        <p>Both tools have solid feature parity in core areas:</p>
+        <ul>
+            <li><strong>Whisper-powered</strong> - Both use OpenAI's Whisper for high-accuracy transcription</li>
+            <li><strong>Waybar integration</strong> - Status indicators for tiling WM users</li>
+            <li><strong>Systemd user service</strong> - Starts at login, always ready</li>
+            <li><strong>Audio feedback</strong> - Know when recording starts/stops</li>
+            <li><strong>Push-to-talk</strong> - Hold hotkey to record</li>
+            <li><strong>ydotool integration</strong> - Text appears at cursor</li>
+        </ul>
 
         <h2>Critical Differences</h2>
 
@@ -109,8 +135,9 @@
             <li><strong>Any compositor</strong> - Works on GNOME, KDE, Sway, Hyprland, and more</li>
             <li><strong>Any distro</strong> - Packages for Arch, Debian, Fedora, or build from source</li>
             <li><strong>Single binary</strong> - No Python environment to manage</li>
+            <li><strong>Desktop notifications</strong> - Visual feedback via notify-send, not just audio</li>
             <li><strong>Privacy-first</strong> - No cloud options means your voice never leaves your machine</li>
-            <li><strong>Broader GPU support</strong> - Vulkan works across GPU vendors</li>
+            <li><strong>Broader GPU support</strong> - Vulkan works across GPU vendors (including ROCm 7.x)</li>
         </ul>
 
         <h2>Setup Comparison</h2>
